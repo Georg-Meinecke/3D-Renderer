@@ -1,3 +1,5 @@
+package Shapes;
+
 public class Vertex {
 
     public double x, y, z;
