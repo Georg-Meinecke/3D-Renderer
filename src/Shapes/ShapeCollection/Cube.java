@@ -1,6 +1,9 @@
-package Shapes;
+package Shapes.ShapeCollection;
 
-public class Cube {
+import Shapes.DisplayedShape;
+import Shapes.Vertex;
+
+public class Cube extends DisplayedShape {
 
      public static Vertex[] vertices = {
             //quadrat nahe Betrachter
@@ -16,4 +19,8 @@ public class Cube {
             {4, 5}, {5, 6}, {6, 7}, {7, 4}, //quadrat weg Betrachter
             {0, 4}, {1, 5}, {2, 6}, {3, 7} //verbindungen der quadrate an den jeweiligen 4 ecken
     };
+
+    public Cube() {
+        super(vertices, edges);
+    }
 }

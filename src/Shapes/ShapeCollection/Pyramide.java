@@ -1,6 +1,9 @@
-package Shapes;
+package Shapes.ShapeCollection;
 
-public class Pyramide {
+import Shapes.DisplayedShape;
+import Shapes.Vertex;
+
+public class Pyramide extends DisplayedShape {
 
     public static Vertex[] vertices = {
             //basis fläche
@@ -13,4 +16,8 @@ public class Pyramide {
             {0, 1}, {1, 2}, {2, 3}, {3, 0}, //basis fläche
             {0, 4}, {1, 4}, {2, 4}, {3, 4}
     };
+
+    public Pyramide() {
+        super(vertices, edges);
+    }
 }

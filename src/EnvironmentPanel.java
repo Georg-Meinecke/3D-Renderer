@@ -1,4 +1,5 @@
 import Shapes.*;
+import Shapes.ShapeCollection.Pyramide;
 
 import javax.swing.*;
 import java.awt.*;
@@ -52,7 +53,7 @@ public class EnvironmentPanel extends JPanel {
         });
 
         //Form daten holen und in einem Objekt speichern
-        shape3D = new Shape3D(Pyramide.vertices, Pyramide.edges);
+        shape3D = new Shape3D(new Pyramide());
     }
 
     //verschieben

@@ -1,6 +1,9 @@
-package Shapes;
+package Shapes.ShapeCollection;
 
-public class Gem {
+import Shapes.DisplayedShape;
+import Shapes.Vertex;
+
+public class Gem extends DisplayedShape {
 
     public static Vertex[] vertices = {
             //basis fläche
@@ -16,4 +19,8 @@ public class Gem {
             {0, 4}, {1, 4}, {2, 4}, {3, 4},
             {0, 5}, {1, 5}, {2, 5}, {3, 5}
     };
+
+    public Gem() {
+        super(vertices, edges);
+    }
 }
