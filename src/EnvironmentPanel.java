@@ -9,7 +9,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 public class EnvironmentPanel extends JPanel {
@@ -36,11 +38,12 @@ public class EnvironmentPanel extends JPanel {
     private int lastMouseX;
     private int lastMouseY;
     private boolean isOrbiting = false;
-    private final double mouseSensitivity = 0.008;
+    private final double mouseSensitivity = 0.016;
 
     private final double moveSpeed = 0.2;
 
     private Shape3D shape3D;
+    private static ArrayList<DisplayedShapeTransferor> shapePortfolio = new ArrayList<>();
 
     private Set<Integer> pressedKeys = new HashSet<>();
 
@@ -117,7 +120,17 @@ public class EnvironmentPanel extends JPanel {
         this.addMouseMotionListener(orbitListener);
 
         //Form daten holen und in einem Objekt speichern
-        shape3D = new Shape3D(new Pyramide());
+        shape3D = randomShape3D();
+    }
+
+    private Shape3D randomShape3D() {
+        shapePortfolio.add(new Cube());
+        shapePortfolio.add(new Pyramide());
+        shapePortfolio.add(new Gem());
+        Random random = new Random();
+        int choosen = random.nextInt(0, shapePortfolio.size());
+        DisplayedShapeTransferor randomShape = shapePortfolio.get(choosen);
+        return new Shape3D(randomShape);
     }
 
     private void update() {
