@@ -27,6 +27,7 @@ public class EnvironmentPanel extends JPanel {
     private final double initialShapeZ = 0.0;
     private final double initialCamYaw = 0.0;
     private final double initialCamPitch = 0.0;
+    private final double initialCameraDistance = 10.0;
 
     private double shapeX = 0.0;
     private double shapeY = 0.0;
@@ -170,6 +171,7 @@ public class EnvironmentPanel extends JPanel {
         shapeZ = initialShapeZ;
         camYaw = initialCamYaw;
         camPitch = initialCamPitch;
+        cameraDistance = initialCameraDistance;
     }
 
     private Point project(Vertex p) {
