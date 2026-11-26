@@ -5,7 +5,7 @@ public class Shape3D {
     public Vertex[] vertices;
     public int[][] edges;
 
-    public Shape3D(DisplayedShape shape) {
+    public Shape3D(DisplayedShapeTransferor shape) {
         this.vertices = shape.vertices;  this.edges = shape.edges;
     }
 }

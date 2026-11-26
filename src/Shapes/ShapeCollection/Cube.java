@@ -1,9 +1,9 @@
 package Shapes.ShapeCollection;
 
-import Shapes.DisplayedShape;
+import Shapes.DisplayedShapeTransferor;
 import Shapes.Vertex;
 
-public class Cube extends DisplayedShape {
+public class Cube extends DisplayedShapeTransferor {
 
      public static Vertex[] vertices = {
             //quadrat nahe Betrachter

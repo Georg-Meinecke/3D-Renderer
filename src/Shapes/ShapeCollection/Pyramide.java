@@ -1,9 +1,9 @@
 package Shapes.ShapeCollection;
 
-import Shapes.DisplayedShape;
+import Shapes.DisplayedShapeTransferor;
 import Shapes.Vertex;
 
-public class Pyramide extends DisplayedShape {
+public class Pyramide extends DisplayedShapeTransferor {
 
     public static Vertex[] vertices = {
             //basis fläche

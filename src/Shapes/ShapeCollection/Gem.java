@@ -1,9 +1,9 @@
 package Shapes.ShapeCollection;
 
-import Shapes.DisplayedShape;
+import Shapes.DisplayedShapeTransferor;
 import Shapes.Vertex;
 
-public class Gem extends DisplayedShape {
+public class Gem extends DisplayedShapeTransferor {
 
     public static Vertex[] vertices = {
             //basis fläche

@@ -1,11 +1,11 @@
 package Shapes;
 
-public class DisplayedShape {
+public class DisplayedShapeTransferor {
 
     public Vertex[] vertices;
     public int[][] edges;
 
-    public DisplayedShape(Vertex[] vertices, int[][] edges) {
+    public DisplayedShapeTransferor(Vertex[] vertices, int[][] edges) {
         this.vertices = vertices;  this.edges = edges;
     }
 }
